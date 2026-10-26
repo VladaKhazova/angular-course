@@ -1,4 +1,4 @@
-# # Master Dependency Injection — Challenge
+# Master Dependency Injection — Challenge
 
 ## Проблема
 
@@ -37,7 +37,6 @@ npm run serve:angular-master-dependency-injection
 - [Inputs](https://angular.dev/guide/components/inputs) — как передать данные в директиву через `input()`
 - [ComponentStore: обновление состояния (`setState`, `patchState`)](https://ngrx.io/guide/component-store/write) — `CurrencyService` построен на `ComponentStore` из NgRx
 
-
 ## Подсказки
 
 <details>
@@ -48,6 +47,7 @@ npm run serve:angular-master-dependency-injection
 на элементе выше `<td>`, пайп возьмёт его, а не экземпляр из `AppComponent`.
 
 </details>
+
 <details>
   <summary>Подсказка 2 — как добавить провайдер на &lt;tr&gt;, не создавая компонент?</summary>
 
@@ -59,8 +59,8 @@ npm run serve:angular-master-dependency-injection
 <details>
   <summary>Подсказка 3 — как передать сервису нужную валюту?</summary>
 
-  Передай в директиву `product.currencyCode` через `input()`, внедри в директиве её собственный
-  `CurrencyService` и запиши код валюты в состояние стора через `patchState`.
-  Учти, что значение input-а ещё недоступно в конструкторе — используй `ngOnInit` или `effect`.
+Передай в директиву `product.currencyCode` через `input()`, внедри в директиве её собственный
+`CurrencyService` и запиши код валюты в состояние стора через `patchState`.
+Учти, что значение input-а ещё недоступно в конструкторе — используй `ngOnInit` или `effect`.
 
 </details>

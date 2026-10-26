@@ -1,6 +1,6 @@
-## InjectionToken — Challenge
+# InjectionToken — Challenge
 
-### ## Проблема
+## Проблема
 
 В приложении есть экран видеозвонка `VideoComponent` с таймером, который тикает раз в **1 секунду**.
 Значение интервала хранится в глобальной константе `DEFAULT_TIMER` (`data.ts`), и её напрямую
@@ -28,7 +28,7 @@
 npm run serve:angular-injection-token
 ```
 
-### ## Полезные материалы
+## Полезные материалы
 
 - Лекция: [InjectionToken](../../lecture/basics.md#injectiontoken), [Providers](../../lecture/basics.md#providers), [Иерархия инжекторов](../../lecture/basics.md#иерархия-инжекторов)
 - [Что такое InjectionToken](https://angular.dev/guide/di/defining-dependency-providers#what-is-an-injectiontoken) и [InjectionToken с `providedIn: 'root'` и `factory`](https://angular.dev/guide/di/defining-dependency-providers#injectiontoken-with-providedin-root)
